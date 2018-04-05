@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2016",
+    "sourceMap": true,
+    "lib": ["es6"]
+  },
+  "include": [
+    "HW_1.ts"
+  ]
+}

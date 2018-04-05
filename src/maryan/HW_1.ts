@@ -3,9 +3,9 @@ function isInArray(a: string[], ...b: string[]) {
 }
 
 
-function summator(...arr: (string | number)[]) {
-    let newArr: number;
-    arr.forEach((item: string|number , i: number, arr: (string|number)) => {
+function summator( [...arr] ) {
+    let newArr = [];
+    arr.forEach( (item, i, arr) => {
         if (typeof item === "number") {
             newArr += item;
         }
@@ -14,6 +14,6 @@ function summator(...arr: (string | number)[]) {
 }
 
 
-function getUnique(arr) {
-
+function getUnique( [...arr] ) {
+    return new Set(arr);
 }
